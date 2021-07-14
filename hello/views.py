@@ -6,6 +6,10 @@ from django.http import HttpResponse
 from .models import Greeting
 import requests
 
+
+def note(request): 
+   return render(request, 'protect.html')
+
 # Create your views here.
 #def index(request):
     # return HttpResponse('Hello from Python!')
