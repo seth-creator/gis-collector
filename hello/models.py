@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.gis.db import models
 #from django.contrib.gis.db import models
 
 # Create your models here.
@@ -6,7 +7,7 @@ class Greeting(models.Model):
     when = models.DateTimeField("date created", auto_now_add=True)
     
     
-"""class MonOffre(models.Model):
+class MonOffre(models.Model):
     comm = (('Abobo', 'Abobo'),
                 ('Adjamé', 'Adiamé'),
                 ('Anyama', 'Anyama'),
@@ -25,7 +26,7 @@ class Greeting(models.Model):
     email = models.EmailField(null=True, max_length = 200)
     agence = models.CharField("Nom de l'agence", max_length = 200, null = True)
     date = models.DateField('Date', null=True)
-    geom = models.PointField('Localiser votre bien',blank = True, null = True)"""
+    geom = models.PointField('Localiser votre bien',blank = True, null = True)
     
 
 

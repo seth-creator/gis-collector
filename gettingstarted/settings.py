@@ -24,7 +24,7 @@ import os
     GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal301'
     os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']"""
 
-import django_heroku
+#import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -140,4 +140,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
